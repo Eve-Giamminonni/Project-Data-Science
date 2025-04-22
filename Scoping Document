@@ -1,0 +1,59 @@
+📄 Scoping Document
+Project Title:
+California Wildfire Watch
+
+Problem Statement:
+California experiences frequent wildfires that endanger lives, property, and the environment. Our project aims to visualize wildfire incidents to help citizens stay informed about fire risks in their area and assist professionals such as real estate agents in assessing regional fire frequency.
+
+Target Audience:
+
+Primary: Citizens of California seeking to monitor wildfire risks near their location.
+
+Secondary: Real estate agents and policy planners who need insights into historical wildfire data.
+
+User Tasks:
+
+Check if there are active or historical wildfires near a specific location.
+
+Understand fire patterns over time.
+
+Evaluate the fire-proneness of certain areas.
+
+How the Visualization Helps:
+
+Increases public awareness and preparedness.
+
+Aids decision-making for people looking to move or invest in California.
+
+Offers a clear, interactive way to view complex data.
+
+Data Sources:
+
+Primary Dataset:
+California Wildfire Incidents (2013–2020) – Kaggle
+Strengths: Multi-year dataset with detailed incident records.
+Limitations: Missing/incorrect values in some columns; formatting issues with coordinates.
+
+Backup Plan:
+Use an alternative dataset on Kaggle or open data portals if needed.
+No simulation planned.
+
+Format: CSV (non-structured).
+
+Cleaning Strategy:
+
+Dropped columns with more than 50% missing or incorrect values.
+
+Replaced missing values in other columns with "missing value".
+
+Corrected malformed coordinates by bounding them within California’s geographic limits.
+
+Design Choices:
+
+Interactive map for spatial awareness.
+
+Time-based filters to explore incident trends.
+
+Tooltip and hover effects for quick information access.
+
+Clean and minimal UI using HTML, CSS, and JavaScript.
